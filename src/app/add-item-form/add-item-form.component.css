@@ -1,0 +1,13 @@
+.input {
+    background: #f5f5f5;
+    border-color: transparent;
+    border-color: #bafacd;
+}
+
+.input:focus {
+    border-color: rgb(159, 104, 235);
+}
+
+.button {
+    background: rgb(174, 125, 241);
+}
