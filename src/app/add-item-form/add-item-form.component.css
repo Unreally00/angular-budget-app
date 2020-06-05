@@ -5,9 +5,13 @@
 }
 
 .input:focus {
-    border-color: rgb(159, 104, 235);
+    border-color: rgb(140, 106, 187);
 }
 
 .button {
-    background: rgb(174, 125, 241);
+    background: rgb(140, 106, 187);
+}
+
+.button:disabled {
+    background: #919191;
 }
