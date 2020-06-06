@@ -31,15 +31,13 @@
     color: white;
 }
 
-
-/* .green {
+.green {
     color: #23e7a2;
-} */
+}
 
-
-/* .red {
+.red {
     color: #e4422c;
-} */
+}
 
 .add-item {
     display: flex;
