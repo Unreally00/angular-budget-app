@@ -10,12 +10,22 @@ import { formatNumber } from '@angular/common';
 })
 export class AddItemFormComponent implements OnInit {
 
-  @Input() item: BudgetItem = new BudgetItem('', null);
+  @Input() item: BudgetItem;
   @Output() formSubmit: EventEmitter<BudgetItem> = new EventEmitter<BudgetItem>();
+
+  isNewItem: boolean;
 
   constructor() { }
 
   ngOnInit() {
+    //if item has a value
+    if (this.item) {
+      //means that an existing item object was passed into this component
+      this.isNewItem = false;
+    } else {
+      this.isNewItem = true;
+      this.item = new BudgetItem('', null);
+    }
   }
 
   onSubmit(form: NgForm) {
